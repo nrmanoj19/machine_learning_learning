@@ -1,7 +1,8 @@
+"""Linear Regression with multi variables"""
+import math
 import pandas as pd
 from sklearn import linear_model
 from word2number import w2n
-import math
 import matplotlib.pyplot as plt
 
 
@@ -23,4 +24,3 @@ plt.xlabel('candidate_profile: Red-experience Blue-test_score Green-interview_sc
 plt.ylabel('salary($)')
 plt.show()
 plt.savefig('salary_prediction.png')
-
