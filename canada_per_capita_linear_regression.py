@@ -15,3 +15,7 @@ print(reg.coef_)
 print(reg.intercept_)
 plt.plot(df['year'], reg.predict(df[['year']]), color='blue')
 plt.show()
+df['predicted_per_capita'] = reg.predict(df[['year']])
+df.to_csv('predictions.csv', index=False)
+plt.savefig('canda_per_capita_prediction.png')
+
