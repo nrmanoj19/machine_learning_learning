@@ -18,4 +18,3 @@ df['predicted_per_capita'] = reg.predict(df[['year']])
 df.to_csv('predictions.csv', index=False)
 plt.savefig('canda_per_capita_prediction.png')
 plt.show()
-
